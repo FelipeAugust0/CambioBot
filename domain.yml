@@ -1,34 +1,33 @@
 version: "3.1"
 
 intents:
-  - greet
-  - goodbye
-  - affirm
-  - deny
-  - mood_great
-  - mood_unhappy
-  - bot_challenge
+  - converter_moeda
 
-responses:
-  utter_greet:
-  - text: "Hey! How are you?"
+entities:
+  - valor
+  - moeda_origem
+  - moeda_destino
 
-  utter_cheer_up:
-  - text: "Here is something to cheer you up:"
-    image: "https://i.imgur.com/nGF1K8f.jpg"
+slots:
+  valor:
+    type: float
+    mappings:
+      - type: from_entity
+        entity: valor
 
-  utter_did_that_help:
-  - text: "Did that help you?"
+  moeda_origem:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: moeda_origem
 
-  utter_happy:
-  - text: "Great, carry on!"
+  moeda_destino:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: moeda_destino
 
-  utter_goodbye:
-  - text: "Bye"
+actions:
+  - action_converter_moeda
 
-  utter_iamabot:
-  - text: "I am a bot, powered by Rasa."
-
-session_config:
-  session_expiration_time: 60
-  carry_over_slots_to_new_session: true
+  

@@ -1,91 +1,62 @@
 version: "3.1"
 
 nlu:
-- intent: greet
+- intent: converter_moeda
   examples: |
-    - hey
-    - hello
-    - hi
-    - hello there
-    - good morning
-    - good evening
-    - moin
-    - hey there
-    - let's go
-    - hey dude
-    - goodmorning
-    - goodevening
-    - good afternoon
+    - Converta [100](valor) [dólares](moeda_origem) para [reais](moeda_destino)
+    - Converta [50](valor) [euros](moeda_origem) para [reais](moeda_destino)
+    - Quero converter [200](valor) [reais](moeda_origem) para [dólar](moeda_destino)
+    - Quanto dá [100](valor) [dólares](moeda_origem) em [reais](moeda_destino)?
+    - Quanto vale [50](valor) [euros](moeda_origem) em [reais](moeda_destino)?
+    - [200](valor) [USD](moeda_origem) em [BRL](moeda_destino)
+    - [100](valor) [BRL](moeda_origem) em [USD](moeda_destino)
+    - [10](valor) [reais](moeda_origem) em [dólar](moeda_destino)
+    - [500](valor) [reais](moeda_origem) em [euros](moeda_destino)
+    - [75](valor) [euros](moeda_origem) para [dólares](moeda_destino)
+    - [30](valor) [dólares](moeda_origem) para [reais](moeda_destino)
+    - [100](valor) [dólar](moeda_origem) em [real](moeda_destino)
+    - [60](valor) [reais](moeda_origem) em [euro](moeda_destino)
+    - Me diga quanto é [100](valor) [dólares](moeda_origem) em [reais](moeda_destino)
+    - Quero saber quanto dá [200](valor) [reais](moeda_origem) em [dólar](moeda_destino)
+    - Faz a conversão de [300](valor) [reais](moeda_origem) para [euro](moeda_destino)
+    - Converter [100](valor) [USD](moeda_origem) para [BRL](moeda_destino)
+    - Converter [50](valor) [EUR](moeda_origem) para [USD](moeda_destino)
+    - [120](valor) [USD](moeda_origem) para [EUR](moeda_destino)
+    - [100](valor) [reais](moeda_origem) para [dólares](moeda_destino)
+    - [20](valor) [euros](moeda_origem) em [reais](moeda_destino)
+    - [10](valor) [usd](moeda_origem) em [brl](moeda_destino)
+    - [99](valor) [brl](moeda_origem) em [usd](moeda_destino)
+    - [100](valor) [dolares](moeda_origem) para [reais](moeda_destino)
+    - quanto dá [10](valor) [reais](moeda_origem) em [dólar](moeda_destino)
+    - converta [15](valor) [euros](moeda_origem) em [reais](moeda_destino)
+    - [50](valor) [euros](moeda_origem) em [reais](moeda_destino)
+    - [100](valor) [dólares](moeda_origem) em [reais](moeda_destino)
 
-- intent: goodbye
+- lookup: moeda
   examples: |
-    - cu
-    - good by
-    - cee you later
-    - good night
-    - bye
-    - goodbye
-    - have a nice day
-    - see you around
-    - bye bye
-    - see you later
+    - real
+    - reais
+    - dolar
+    - dólar
+    - dólares
+    - euro
+    - euros
+    - USD
+    - BRL
+    - EUR
 
-- intent: affirm
+- synonym: USD
   examples: |
-    - yes
-    - y
-    - indeed
-    - of course
-    - that sounds good
-    - correct
+    - dolar
+    - dólar
+    - dólares
 
-- intent: deny
+- synonym: BRL
   examples: |
-    - no
-    - n
-    - never
-    - I don't think so
-    - don't like that
-    - no way
-    - not really
+    - real
+    - reais
 
-- intent: mood_great
+- synonym: EUR
   examples: |
-    - perfect
-    - great
-    - amazing
-    - feeling like a king
-    - wonderful
-    - I am feeling very good
-    - I am great
-    - I am amazing
-    - I am going to save the world
-    - super stoked
-    - extremely good
-    - so so perfect
-    - so good
-    - so perfect
-
-- intent: mood_unhappy
-  examples: |
-    - my day was horrible
-    - I am sad
-    - I don't feel very well
-    - I am disappointed
-    - super sad
-    - I'm so sad
-    - sad
-    - very sad
-    - unhappy
-    - not good
-    - not very good
-    - extremly sad
-    - so saad
-    - so sad
-
-- intent: bot_challenge
-  examples: |
-    - are you a bot?
-    - are you a human?
-    - am I talking to a bot?
-    - am I talking to a human?
+    - euro
+    - euros

@@ -1,0 +1,52 @@
+{
+  "text": {
+    "converta": 4,
+    "__number__": 0,
+    "dólares": 11,
+    "para": 18,
+    "reais": 21,
+    "euros": 15,
+    "quero": 20,
+    "converter": 5,
+    "dólar": 10,
+    "quanto": 19,
+    "dá": 9,
+    "em": 12,
+    "vale": 25,
+    "usd": 24,
+    "brl": 2,
+    "real": 22,
+    "euro": 14,
+    "me": 17,
+    "diga": 7,
+    "é": 26,
+    "saber": 23,
+    "faz": 16,
+    "a": 1,
+    "conversão": 3,
+    "de": 6,
+    "eur": 13,
+    "dolares": 8
+  },
+  "intent": {
+    "converter_moeda": 0
+  },
+  "response": null,
+  "action_name": {
+    "action_listen": 7,
+    "action_restart": 8,
+    "action_session_start": 10,
+    "action_default_fallback": 5,
+    "action_deactivate_loop": 2,
+    "action_revert_fallback_events": 9,
+    "action_default_ask_affirmation": 3,
+    "action_default_ask_rephrase": 4,
+    "action_two_stage_fallback": 11,
+    "action_unlikely_intent": 12,
+    "action_back": 0,
+    "action_extract_slots": 6,
+    "action_converter_moeda": 1
+  },
+  "action_text": null,
+  "intent_response_key": null
+}

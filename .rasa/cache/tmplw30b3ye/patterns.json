@@ -1,0 +1,6 @@
+[
+  {
+    "name": "moeda",
+    "pattern": "(\\breal\\b|\\breais\\b|\\bdolar\\b|\\bdólar\\b|\\bdólares\\b|\\beuro\\b|\\beuros\\b|\\bUSD\\b|\\bBRL\\b|\\bEUR\\b)"
+  }
+]
